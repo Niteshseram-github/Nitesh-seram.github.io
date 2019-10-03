@@ -1258,14 +1258,17 @@ div.row.align-center.mar-bot40{
 	margin: 0 0 20px 0;
 }
 .member-photo img {
-	-webkit-border-radius:50%;
-		-moz-border-radius:50%;
+	-webkit-border-radius:40%;
+		-moz-border-radius:40%;
 			border-radius:50%;
 }
 
 .team-detail h4 {
 	font-weight: 700;
     font-size: 15px;
+}
+div.team-member{
+    content: none;
 }
 @media screen and (max-width: 736px) {
 
@@ -3448,13 +3451,17 @@ div#slider{
 				position: relative;
 				display: block;
 				width: 100%;
+                
 				border-radius: 4px;
 				overflow: hidden;
 			}
 
 				.tiles article > .image img {
 					display: block;
-					width: 100%;
+					/*width: 100%;
+                     width: 450px;height:450px;*/
+                    max-width: 100%;
+                    height: auto;
 				}
 
 				.tiles article > .image:before {
@@ -3678,6 +3685,7 @@ div#slider{
 					width: 100%;
 					margin: 1.25em 0 0 0;
 				}
+            
 
 		}
 
@@ -4090,7 +4098,7 @@ div.row>div.col-md-2    > p,a{
 /* Landing */
 
 	body.landing #page-wrapper {
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/deer.jpg");
+		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/deer.jpg");
 		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/deer.jpg");
 		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/deer.jpg");
 		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/deer.jpg");
